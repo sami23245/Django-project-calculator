@@ -1,0 +1,85 @@
+
+/* CSS: Styling the UI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f0f0f; /* Deep dark background */
+}
+
+.calculator {
+    width: 340px;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.7);
+    border: 1px solid #333;
+}
+
+#display {
+    width: 100%;
+    height: 70px;
+    font-size: 2.5rem;
+    text-align: right;
+    margin-bottom: 20px;
+    background: #000;
+    color: #00ffcc; /* Neon Teal display */
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: #2a2a2a;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #3d3d3d;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.operator {
+    color: #ff9500; /* Professional Orange */
+    background: #333;
+}
+
+.equals {
+    background: #ff9500;
+    color: #fff;
+    grid-row: span 2; /* Makes the = button tall */
+}
+
+.zero {
+    grid-column: span 2; /* Makes the 0 button wide */
+}
+
+.operator:hover {
+    background: #444;
+}
